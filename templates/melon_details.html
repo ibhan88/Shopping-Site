@@ -14,6 +14,12 @@
             <div class="well">
                 <h3>Price per melon</h3>
                 <p> {{ display_melon.price_str() }} </p>
+                
+                <!-- Added quantity input box. -->
+                <form action="/cart">
+                    Quantity: <input type="text" name="quantity">
+                </form>
+
                 <a class="btn btn-primary" href="/add_to_cart/{{ display_melon.id }}">
                     Add to Cart
                 </a>
